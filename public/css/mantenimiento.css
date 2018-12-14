@@ -1,0 +1,199 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background: #c2b4ad;
+}
+
+body .cotentAjustes {
+    background-image: url('../assets/images/background/torresMadrid.png');
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header .off {
+    width: 25%;
+    height: auto;
+    text-align: center;
+    padding: .5em 0;
+    font-size: 2em;
+    color: rgb(53, 55, 58);
+    cursor: pointer;
+    border: 0px solid black;
+}
+
+.contenido {
+    width: 100%;
+    height: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contenido section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 0px solid black;
+}
+
+.contenido section .divMant {
+    position: relative;
+    margin-top: 180px;
+    left: 0px;
+    text-align: center;
+    background: linear-gradient(to top, RGB(70, 97, 164) 80%, rgb(203, 195, 195) 100%);
+    width: 90%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.contenido section .divMant p {
+    margin: 10px;
+    color: aliceblue;
+    font-size: 1.8em;
+}
+
+.contenido section .saludo {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: rgb(63, 54, 43);
+}
+
+.contenido section .icon-ajustes {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+
+.contenido section .icon-ajustes .conf {
+    position: relative;
+    margin: 0px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    text-align: center;
+    z-index: 200;
+}
+
+.contenido section .icon-ajustes .conf i {
+    margin-top: 30px;
+    font-size: 2.2em;
+    color: rgb(80, 68, 43);
+}
+
+body .ajustes {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    height: 90vh;
+    background: rgb(244, 244, 249);
+    bottom: -100%;
+    transition-duration: .4s;
+    z-index: 1000;
+}
+
+body .ajustes .cerrar {
+    position: absolute;
+    top: 10px;
+    right: 0%;
+    cursor: pointer;
+}
+
+body .ajustes .cerrar p {
+    font-size: 1.2em;
+    margin: 0px;
+    padding: .2em 1em .4em 1em;
+    border-radius: 10px;
+    background: rgba(71, 70, 68, .8);
+    color: white;
+}
+
+body .ajustes .content-aj {
+    position: relative;
+    width: 80%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body .ajustes .content-aj .info-user {
+    margin-top: 25px;
+}
+
+body .ajustes .content-aj .info-user,
+body .ajustes .content-aj .info-user .div-info,
+body .ajustes .content-aj .info-user .password {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body .ajustes .content-aj .info-user .div-info>h2 {
+    margin: 30px 0px;
+    font-weight: 340;
+    text-decoration: underline;
+}
+
+body .ajustes .content-aj .info-user .div-info>p {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+body .ajustes .content-aj .info-user .div-info>p span {
+    font-weight: 200;
+}
+
+body .ajustes .content-aj .info-user .password p {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+body .ajustes .content-aj .info-user .password input {
+    border-radius: 6px;
+    height: 25px;
+}
+
+body .ajustes .content-aj .info-user .password .btn-actualizar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+body .ajustes .content-aj .info-user .password .btn-actualizar button {
+    margin-top: 30px;
+    width: 200px;
+    background: RGB(57, 139, 247);
+    margin-left: -40%;
+    padding: .5em;
+    border-radius: 20px;
+    color: aliceblue;
+    outline: none;
+}

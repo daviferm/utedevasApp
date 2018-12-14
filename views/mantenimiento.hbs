@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="css/spinner.css">
+ <link rel="stylesheet" href="css/mantenimiento.css">
+ <title>Tareas de Mantenimiento</title>
+</head>
+<body>
+    <div class="cotentAjustes">
+        <div class="content-spp">
+            <div class="spinner medium">
+                <div class="spinner-wrapper">
+                    <div class="rotator">
+                        <div class="inner-spin"></div>
+                        <div class="inner-spin"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main>
+            <header>
+                <div class="off">
+                    <i class="fas fa-power-off"></i>
+                </div>
+            </header>
+            <div class="contenido">
+                <section class="links">
+                    <div class="divMant">
+                        <p>Mantenimiento</p>
+                    </div>
+                    <div class="saludo">
+                    </div>
+                    <div class="icon-ajustes">
+                        <div class="conf">
+                            <i class="fas fa-user-cog"></i>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div class="ajustes">
+            <div class="content-aj">
+                <div class="cerrar">
+                    <p>cerrar</p>
+                </div>
+                <section class="info-user">
+                    <div class="div-info">
+                        <h2>Información de usuario</h2>
+                        <p class="name">Nombre: <span id="nombre"></span></p>
+                        <p class="nick">Nick: <span id="nick"></span></p>
+                        <p class="email">Email: <span id="email"></span></p>
+                    </div>
+                    <div class="password">
+                        <form name="password" id="form-password" class="new-password">
+                            <p>Nueva contraseña:</p>
+                            <input type="password" size="28" form="password" name="contrasena" placeholder="Nueva contraseña" autocomplete="off" autofocus>
+                            <p>Comfirma la contraseña:</p>
+                            <input  type="password" size="28" form="password" name="confirmar" placeholder="Confirma la contraseña" autocomplete="off"><br>
+                            <dir class="btn-actualizar">
+                                <button type="submit">Actualizar</button>
+                            </dir>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="js/modernizr-custom.js"></script>
+    {{!-- <script src="socket.io/socket.io.js"></script> --}}
+    <script src="js/mant.js" type="module"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,52 @@
+.contenido {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 86%;
+    transform: translate(-50%, -50%);
+    animation: 1.4s mostrar;
+}
+
+@keyframes mostrar {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.contenido .spinner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: -moz-linear-gradient(top, rgba(5, 5, 5, 1) 0%, rgba(1, 1, 1, 0) 73%, rgba(7, 5, 5, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(5, 5, 5, 1) 0%, rgba(1, 1, 1, 0) 73%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(5, 5, 5, 1) 0%, rgba(1, 1, 1, 0) 73%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#050505', endColorstr='#00000000', GradientType=0);
+    /* IE6-9 */
+    animation: .8s rotar linear infinite;
+}
+
+.spinner:after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

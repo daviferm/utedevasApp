@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="David Fernandez">
+    <!-- Favicon icon -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png"> -->
+    <title>Login</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- page css -->
+    <link href="css/pages/login-register-lock.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/spinners.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body class="card-no-border">
+    <section id="wrapper">
+        <div class="login-register" style="background-image:url(../assets/images/background/login-register.jpg); background-position:bottom;">
+        <h1 class="display-8 text-center shadow p-3 mb-5 bg-white rounded">Servicio de Mantenimiento</h1>
+            <div class="login-box card">
+                <div class="card-body">
+                    <form class="form-horizontal form-material" id="loginform" autocomplete="off">
+                        <h3 class="box-title m-b-20">Ingresar</h3>
+                        <div class="form-group ">
+                            <div class="col-xs-12">
+                                <select class="form-control" id="empleados">
+                                    <option value="0">Nombre de empleado</option>
+                                     <option value="dFernandez">dFernandez</option>
+                                     <option value="aPrieto">aPrieto</option>
+                                     <option value="aSanchez">aSanchez</option>
+                                     <option value="dGodoy">dGodoy</option>
+                                     <option value="dGarcia">dGarcia</option>
+                                     <option value="fDionisio">fDionisio</option>
+                                     <option value="jGomez">jGomez</option>
+                                     <option value="jlBallesteros">jlBallesteros</option>
+                                     <option value="jLopez">jLopez</option>
+							    </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input class="form-control" type="password" required="" placeholder="Contraseña" name="password" id="passwordLogin"> </div>
+                        </div>
+
+                        <div class="form-group text-center">
+                            <div class="col-xs-12 p-b-20">
+                                <button class="btn btn-block btn-lg btn-info btn-rounded" id="buttonLogin">Ingresar</button>
+                            </div>
+                        </div>
+                    </form>
+                     <div class="contenido">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    {{!-- <script src="socket.io/socket.io.js"></script> --}}
+    <script src="js/home.js"></script>
+
+</body>
+
+</html>

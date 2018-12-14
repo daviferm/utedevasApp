@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/spinner.css">
+    <link rel="stylesheet" href="css/tareasList.css">
+    <title>Mantenimiento</title>
+</head>
+
+<body>
+    <div class="content-spp">
+        <div class="spinner medium">
+            <div class="spinner-wrapper">
+                <div class="rotator">
+                    <div class="inner-spin"></div>
+                    <div class="inner-spin"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <header>
+            <div class="formulario">
+                <form action="#" id="formulario">
+                    <section class="for">
+                        <div class="barrio">
+                            <select class="form-control" id="barrio">
+                                <option value="0">Selectiona un Barrio</option>
+							</select>
+                        </div>
+                        <div class="botonForm">
+                            <button id="btn-mas" type="submit">
+								<ion-icon name="add"></ion-icon>
+							</button>
+                        </div>
+                    </section>
+                </form>
+                <div class="off">
+                    <i class="fas fa-power-off"></i>
+                </div>
+            </div>
+        </header>
+        <div class="contenido">
+            <div class="content">
+                <h2>Lista de Tareas:</h2>
+                <section class="links">
+                    <ul id="lista-ul" >
+
+                    </ul>
+                </section>
+            </div>
+            <div class="cajaspinner">
+                <div class="content-spinner">
+                     <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="mapa fast">
+        <div class="bars">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div id="map"></div>
+        <div class="posicionGps">
+            <ion-icon name="locate"></ion-icon>
+        </div>
+    </div>
+        
+    <script src="js/modernizr-custom.js"></script>
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+    {{!-- <script src="socket.io/socket.io.js"></script> --}}
+    <script src="./js/switAlert/sweetalert2.all.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX2HNbva5rTOcAvc3TabY55P4Tk1LXIlY"></script>
+    <script src="js/tareasList.js" type="module"></script>
+</body>
+
+</html>
