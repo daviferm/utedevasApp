@@ -18,6 +18,8 @@ LOGIN.addEventListener('submit', enviarLogin);
 async function enviarLogin(e) {
     e.preventDefault();
 
+    SPINNER.style.display = "block";
+
     const user = selectUser.options[selectUser.selectedIndex].value;
     var usuario = {
         nombre: user,
@@ -36,6 +38,8 @@ async function enviarLogin(e) {
 
     if (!content.ok) {
         alert(content.err.mensage);
+        SPINNER.style.display = "none";
+
     } else {
         console.log(content);
         var token = content.token;
@@ -44,12 +48,10 @@ async function enviarLogin(e) {
         sessionStorage.setItem('token', token);
         sessionStorage.setItem('usuario', usuario);
 
-        SPINNER.style.display = "block";
 
         window.location = './mantenimiento';
-        setTimeout(() => {
-            SPINNER.style.display = "none";
-        }, 2500);
+
+        SPINNER.style.display = "none";
 
     }
 }
