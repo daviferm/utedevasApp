@@ -1,5 +1,3 @@
-'use strict'
-
 //variables
 
 const LOGIN = document.querySelector('#loginform');

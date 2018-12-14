@@ -42,6 +42,7 @@ app.get('/tareas', (req, res) => {
 app.post('/login', (req, res) => {
 
     let body = req.body;
+    console.log(body);
 
     //Este método regresa solo un usuario
     //Puedo especificar una codición en el primer parámetro
