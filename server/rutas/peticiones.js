@@ -20,61 +20,6 @@ app.get('/verification', verificaToken, (req, res) => {
     })
 });
 
-
-
-app.post('/login', (req, res) => {
-
-    let body = req.body;
-    console.log(body);
-
-    //Este método regresa solo un usuario
-    //Puedo especificar una codición en el primer parámetro
-    Empleado.findOne({ nick: body.nombre }, (err, usuarioDB) => {
-
-        if (err) {
-            return res.status(500).json({
-                ok: false,
-                err
-            })
-        }
-        //Verificamos si el email de usuario existe
-        if (!usuarioDB) {
-            return res.status(400).json({
-                ok: false,
-                err: {
-                    mensage: '(Usuario) o contraseña incorrecto'
-                }
-            })
-        }
-        //Verificamos si la contraseña es correcta con una función de la libreria bcrypt
-        if (!bcrypt.compareSync(body.password, usuarioDB.password)) {
-            return res.status(400).json({
-                ok: false,
-                err: {
-                    mensage: 'Usuario o (contraseña) incorrecto'
-                }
-            })
-        }
-        //Especificamos los parámetros que queremos enviar al Front-end
-        let empleado = _.pick(usuarioDB, ['_id', 'role', 'nombre', 'nick', 'email']);
-
-        // //Generamos un token
-        let token = jwt.sign({
-            usuario: empleado
-        }, process.env.SEED, { expiresIn: process.env.CADUCIDAD_TOKEN });
-
-        let usuario = {
-            ok: true,
-            usuario: empleado,
-            token
-        };
-
-        return res.json(usuario)
-
-    });
-});
-
-
 //Devolvemos un elemento a la página de '/actualizar'
 app.post('/actualiza', verificaToken, (req, res) => {
     let bodyAlias = req.body.alias;
