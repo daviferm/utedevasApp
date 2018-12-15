@@ -198,35 +198,6 @@ function crearJsonMets() {
 
     });
 }
-// crearJsonMets();
-
-
-
-//Añadir la base de datos de parquímetros a mongodb
-
-// let num = 0;
-// baseDatos.forEach(elem => {
-
-//     let met = new Met({
-//         alias: elem.alias,
-//         barrio: elem.barrio,
-//         direccion: elem.direccion,
-//         fabricante: elem.fabricante,
-//         empresa: elem.empresa,
-//         tarifa: elem.tarifa,
-//         latitud: elem.latitud,
-//         longitud: elem.longitud,
-//         estado: true
-//     });
-//     met.save((err, metDB) => {
-//         if (err) {
-//             console.log('Error a guardar: ', elem);
-//         } else {
-//             num++;
-//             console.log('Mets guardadas en la base de datos: ', num);
-//         }
-//     });
-// });
 
 //Función para modificar algún parámetro de la base de datos
 function actualizarDB() {

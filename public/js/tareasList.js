@@ -19,6 +19,7 @@ const $mapa = document.querySelector('.mapa');
 const $barras = document.querySelector('.bars');
 const position = document.querySelector('.posicionGps');
 const $spinner = document.querySelector('.cajaspinner');
+const SPINNER = document.querySelector('.content-spp');
 const $contentTareas = document.querySelector('.content');
 
 
@@ -134,7 +135,8 @@ async function nuevaTarea(e) {
 //Actualizar las tareas que hay en la base de datos
 async function actualizarTareas() {
 
-    $spinner.style.display = 'block';
+    SPINNER.style.display = 'block';
+    // $spinner.style.display = 'block';
 
     $listaUl.innerHTML = '';
 
@@ -146,7 +148,8 @@ async function actualizarTareas() {
         })
         .then(async(resp) => {
             let respuesta = await resp.json();
-            $spinner.style.display = 'none';
+            // $spinner.style.display = 'none';
+            SPINNER.style.display = 'none';
             return respuesta;
         })
     arregloLi = tareas.list;
