@@ -33,7 +33,6 @@ body {
     padding: 2px;
     border-radius: 5px;
     background: rgba(122, 122, 186, 0.6);
-    border: 0px solid black;
 }
 
 .mapa .bars i {
@@ -188,10 +187,7 @@ header .formulario .off {
     font-size: 2em;
     color: rgb(53, 55, 58);
     cursor: pointer;
-    border: 0px solid black;
 }
-
-header .formulario .off ion-icon {}
 
 .contenido {
     position: relative;
@@ -215,9 +211,31 @@ header .formulario .off ion-icon {}
     background-size: 100%;
 }
 
+.contenido .content .headerContent {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    height: 60px;
+}
+
+.contenido .content .headerContent .linkUsuarios {
+    width: 80px;
+}
+
+.contenido .content .headerContent .linkUsuarios ion-icon {
+    font-size: 2em;
+    margin-top: .3em;
+    cursor: pointer;
+}
+
+.contenido .content .tituloLista {
+    width: 100%;
+    font-size: 1em;
+}
+
 .contenido .links {
     position: relative;
-    margin-top: 0px;
+    margin-top: -20px;
     left: 0px;
     text-align: center;
     width: 100%;
@@ -244,10 +262,17 @@ header .formulario .off ion-icon {}
     border-radius: 4px;
     padding: 0px 0px;
     /* background: linear-gradient(to top, rgb(100, 114, 150) 30%, rgb(56, 103, 88) 100%); */
-    background-color: rgb(75, 91, 136);
     cursor: pointer;
     vertical-align: text-bottom;
     animation: .6s mostrar 1;
+}
+
+.bg_blue {
+    background-color: rgb(75, 91, 136);
+}
+
+.bg_green {
+    background-color: rgb(57, 85, 80);
 }
 
 @keyframes mostrar {
@@ -435,4 +460,46 @@ header .formulario .off ion-icon {}
     100% {
         transform: rotate(360deg);
     }
+}
+
+
+/* Usuarios conectados */
+
+#usuarios {
+    position: fixed;
+    width: 250px;
+    height: 500px;
+    padding-left: 1em;
+    background: orange;
+    z-index: 5000;
+    top: 66px;
+    left: -100%;
+    transition-duration: .4s;
+    background: rgb(99, 116, 79);
+    border-bottom-right-radius: 10px;
+    border-right: 5px solid gray;
+}
+
+#usuarios:before {}
+
+#usuarios h3 {
+    font-size: 1.4em;
+}
+
+#usuarios ion-icon {
+    position: relative;
+    top: 10px;
+    left: 85%;
+    width: 25px;
+    height: 25px;
+}
+
+#listUser {
+    list-style: none;
+}
+
+#listUser li {
+    margin-top: 14px;
+    font-size: 1.2em;
+    color: bisque;
 }

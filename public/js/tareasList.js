@@ -21,9 +21,20 @@ const position = document.querySelector('.posicionGps');
 const $spinner = document.querySelector('.cajaspinner');
 const SPINNER = document.querySelector('.content-spp');
 const $contentTareas = document.querySelector('.content');
+const $listaUsuarios = document.getElementById('usuarios');
+const $usuarios = document.getElementById('listUser');
+const $iconoUser = document.getElementById('iconUser');
+const $close = document.getElementById('close');
 
 
 $barras.addEventListener('click', ocultarMapa);
+$iconoUser.addEventListener('click', function() {
+    $listaUsuarios.style.left = '0px';
+});
+
+$close.addEventListener('click', function() {
+    $listaUsuarios.style.left = '-100%';
+})
 
 
 //Arreglo para guardar localmente todas las tareas que hay en la base de datos mongod
@@ -35,17 +46,20 @@ $off.addEventListener('click', function() {
 });
 
 //Comando para establecer la conexión socket
-// var socket = io();
+var socket = io();
 
-/*
+
 socket.on('connect', function() {
 
     console.log('Conectado al servedor desde lista de tareas..');
 
     let usuario = JSON.parse(sessionStorage.getItem('usuario'));
 
-    socket.emit('userConection', usuario, function(usuarios) {
-        console.log(usuarios)
+    socket.emit('userConection', usuario, function(empleados) {
+        console.log(empleados)
+
+        actualizarUsuarios(empleados);
+
     });
 
 });
@@ -55,6 +69,10 @@ socket.on('crearMensaje', function(mensaje) {
 
 socket.on('listaEmpleados', function(empleados) {
     console.log(empleados);
+
+    actualizarUsuarios(empleados);
+
+
 });
 
 
@@ -65,7 +83,20 @@ socket.on('disconnect', function() {
 
     let usuario = JSON.parse(sessionStorage.getItem('usuario'));
 
-});*/
+});
+
+//Actualiza la lista de empleados conectados
+function actualizarUsuarios(empleados) {
+
+    $usuarios.innerHTML = '';
+
+    empleados.forEach(function(user) {
+        let usuario = document.createElement('li');
+        usuario.textContent = user.nombre;
+        $usuarios.appendChild(usuario);
+    })
+
+}
 
 //llenar selected lista barrios
 //Variables globales

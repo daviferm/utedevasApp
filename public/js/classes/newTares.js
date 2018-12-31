@@ -2,6 +2,8 @@
 
 //Clase para manejar las tareas
 
+let bgcolor = true;
+
 export class Tarea {
 
     constructor(titulo, barrio, id, num) {
@@ -19,7 +21,13 @@ export class Tarea {
         let cont = arrBarrio.length;
 
         let li = document.createElement('li');
-        li.className = 'liServicios';
+
+        if (bgcolor) {
+            li.className = 'liServicios bg_blue';
+        } else {
+            li.className = 'liServicios bg_green';
+        }
+
         li.setAttribute("data-id", this.id);
         let html = `
             <div class="titulo">
@@ -43,6 +51,8 @@ export class Tarea {
         `
         li.innerHTML = html;
         li.addEventListener('click', this.accionLi);
+
+        bgcolor = !bgcolor;
 
         return {
             li: li,

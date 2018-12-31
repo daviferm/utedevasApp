@@ -1,5 +1,5 @@
 //Requerimos el objeto que maneja la libreria socket-io
-// const { io } = require('../server');
+const { io } = require('../server');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { Usuarios } = require('../clases/usuarios');
@@ -39,3 +39,6 @@ io.on('connection', (client) => {
     })
 
 });
+
+
+module.exports = io;

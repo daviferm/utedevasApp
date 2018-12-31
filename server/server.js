@@ -1,8 +1,8 @@
 require('./config/config');
 
 const express = require('express');
-// const socketIO = require('socket.io');
-// const http = require('http');
+const socketIO = require('socket.io');
+const http = require('http');
 
 const colors = require('colors');
 const mongoose = require('mongoose');
@@ -17,7 +17,7 @@ const bodyParser = require('body-parser');
 app.set('view engine', 'hbs');
 
 //es necesarios para trabajar con socket-io
-// let server = http.createServer(app);
+let server = http.createServer(app);
 
 
 // parse application/x-www-form-urlencoded
@@ -41,11 +41,11 @@ const port = process.env.PORT || 3000;
 
 // IO = esta es la comunicacion del backend
 //exportamos socketIO para manejarlo en otro archivo
-// module.exports.io = socketIO(server);
+module.exports.io = socketIO(server);
 
 
 //volvemos a requerir el archivo que maneja socketIO
-// require('./sockets/socket');
+require('./sockets/socket');
 
 
 //Conectar la base de datos
@@ -56,7 +56,7 @@ mongoose.connect(process.env.URLDB, { useNewUrlParser: true }, (err, res) => {
     console.log('Base de datos ONLINE'.green);
 });
 
-app.listen(process.env.PORT, (err) => {
+server.listen(process.env.PORT, (err) => {
 
     if (err) throw new Error(err);
 
