@@ -22,19 +22,21 @@ const $spinner = document.querySelector('.cajaspinner');
 const SPINNER = document.querySelector('.content-spp');
 const $contentTareas = document.querySelector('.content');
 const $listaUsuarios = document.getElementById('usuarios');
-const $usuarios = document.getElementById('listUser');
-const $iconoUser = document.getElementById('iconUser');
-const $close = document.getElementById('close');
+// const $usuarios = document.getElementById('listUser');
+// const $iconoUser = document.getElementById('iconUser');
+// const $close = document.getElementById('close');
 
 
 $barras.addEventListener('click', ocultarMapa);
-$iconoUser.addEventListener('click', function() {
-    $listaUsuarios.style.left = '0px';
-});
 
-$close.addEventListener('click', function() {
-    $listaUsuarios.style.left = '-100%';
-})
+
+// $iconoUser.addEventListener('click', function() {
+//     $listaUsuarios.style.left = '0px';
+// });
+
+// $close.addEventListener('click', function() {
+//     $listaUsuarios.style.left = '-100%';
+// })
 
 
 //Arreglo para guardar localmente todas las tareas que hay en la base de datos mongod
@@ -46,44 +48,41 @@ $off.addEventListener('click', function() {
 });
 
 //Comando para establecer la conexión socket
-var socket = io();
+// var socket = io();
 
 
-socket.on('connect', function() {
+// socket.on('connect', function() {
 
-    console.log('Conectado al servedor desde lista de tareas..');
+//     console.log('Conectado al servedor desde lista de tareas..');
 
-    let usuario = JSON.parse(sessionStorage.getItem('usuario'));
+//     let usuario = JSON.parse(sessionStorage.getItem('usuario'));
 
-    socket.emit('userConection', usuario, function(empleados) {
-        console.log(empleados)
+//     socket.emit('userConection', usuario, function(empleados) {
+//         console.log(empleados)
 
-        actualizarUsuarios(empleados);
+//         actualizarUsuarios(empleados);
 
-    });
+//     });
 
-});
-socket.on('crearMensaje', function(mensaje) {
-    console.log(mensaje);
-});
+// });
+// socket.on('crearMensaje', function(mensaje) {
+//     console.log(mensaje);
+// });
 
-socket.on('listaEmpleados', function(empleados) {
-    console.log(empleados);
+// socket.on('listaEmpleados', function(empleados) {
+//     console.log(empleados);
 
-    actualizarUsuarios(empleados);
+//     actualizarUsuarios(empleados);
 
+// });
 
-});
+// socket.on('disconnect', function() {
 
+//     console.log('Desconectado del servidor (lista de tareas)...');
 
+//     let usuario = JSON.parse(sessionStorage.getItem('usuario'));
 
-socket.on('disconnect', function() {
-
-    console.log('Desconectado del servidor (lista de tareas)...');
-
-    let usuario = JSON.parse(sessionStorage.getItem('usuario'));
-
-});
+// });
 
 //Actualiza la lista de empleados conectados
 function actualizarUsuarios(empleados) {

@@ -214,14 +214,18 @@ header .formulario .off {
 .contenido .content .headerContent {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: center;
     height: 60px;
 }
 
+
+/* 
 .contenido .content .headerContent .linkUsuarios {
     width: 80px;
-}
+} */
 
+
+/* 
 .contenido .content .headerContent .linkUsuarios ion-icon {
     font-size: 2em;
     margin-top: .3em;
@@ -231,7 +235,7 @@ header .formulario .off {
 .contenido .content .tituloLista {
     width: 100%;
     font-size: 1em;
-}
+} */
 
 .contenido .links {
     position: relative;
@@ -465,6 +469,8 @@ header .formulario .off {
 
 /* Usuarios conectados */
 
+
+/* 
 #usuarios {
     position: fixed;
     width: 250px;
@@ -479,8 +485,6 @@ header .formulario .off {
     border-bottom-right-radius: 10px;
     border-right: 5px solid gray;
 }
-
-#usuarios:before {}
 
 #usuarios h3 {
     font-size: 1.4em;
@@ -502,4 +506,4 @@ header .formulario .off {
     margin-top: 14px;
     font-size: 1.2em;
     color: bisque;
-}
+} */
