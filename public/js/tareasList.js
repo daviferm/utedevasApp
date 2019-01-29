@@ -293,19 +293,28 @@ function mostrarPines(mapa, arreglo) {
 //Obtener posición GPS
 let getPosicion = () => {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition((position) => {
-            position = {
-                lat: position.coords.latitude,
-                lng: position.coords.longitude
-            };
-            let latLng = {
-                lat: position.lat,
-                lng: position.lng
-            }
-            let miPosicion = mapa.mostrarPosicion(latLng);
+
+        let intervalo = setInterval(() => {
+            navigator.geolocation.getCurrentPosition((position) => {
 
 
-        });
+                position = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+                let latLng = {
+                    lat: position.lat,
+                    lng: position.lng
+                }
+                let miPosicion = mapa.mostrarPosicion(latLng);
+
+                setTimeout(function() {
+                    miPosicion.setMap(null);
+                }, 499);
+
+            });
+        }, 500);
+
 
     } else {
         throw error = new Error('Necesitas habilitar GPS!');
