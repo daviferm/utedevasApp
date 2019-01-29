@@ -297,7 +297,6 @@ let getPosicion = () => {
         let intervalo = setInterval(() => {
             navigator.geolocation.getCurrentPosition((position) => {
 
-
                 position = {
                     lat: position.coords.latitude,
                     lng: position.coords.longitude
@@ -314,7 +313,6 @@ let getPosicion = () => {
 
             });
         }, 500);
-
 
     } else {
         throw error = new Error('Necesitas habilitar GPS!');
