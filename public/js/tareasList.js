@@ -309,10 +309,10 @@ let getPosicion = () => {
 
                 setTimeout(function() {
                     miPosicion.setMap(null);
-                }, 499);
+                }, 800);
 
             });
-        }, 500);
+        }, 1000);
 
     } else {
         throw error = new Error('Necesitas habilitar GPS!');
