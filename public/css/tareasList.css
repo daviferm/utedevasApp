@@ -4,6 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     animation: .8s aparecer;
     background: #c2b4ad;
+    background-color: rgb(109, 125, 169);
 }
 
 .mapa {
