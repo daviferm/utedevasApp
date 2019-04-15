@@ -181,3 +181,52 @@ async function generarJSON() {
 
     console.info(jsonMet);
 }
+
+//añadir el archivo data.json a la base de datos Mongod
+async function llenarMogo() {
+
+    let token = sessionStorage.getItem('token');
+
+    let data = await fetch('../../data/data.json')
+        .then(async function(resp) {
+            let respuesta = await resp.json();
+            return respuesta;
+        })
+
+    let arrData = data.parkimetros;
+    // console.log(arrData);
+
+    arrData.forEach(elem => {
+
+        let data = {
+            alias: elem.alias,
+            barrio: elem.barrio,
+            direccion: elem.direccion,
+            fabricante: elem.fabricante,
+            empresa: elem.empresa,
+            tarifa: elem.tarifa,
+            latitud: elem.latitud,
+            longitud: elem.longitud,
+            estado: elem.estado
+        }
+
+
+        const objMet = fetch('/met', {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json',
+                    'token': token
+                }
+            })
+            .then(async(resp) => {
+                let respuesta = await resp.json();
+                return respuesta;
+            })
+
+    });
+
+
+}
+
+// llenarMogo();

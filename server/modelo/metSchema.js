@@ -42,10 +42,10 @@ let metsSchema = new Schema({
         type: String,
         default: true,
         enum: estadosValidos
-    },
-    _id: {
-        type: String
     }
+    // _id: {
+    //     type: String
+    // }
 });
 
 metsSchema.plugin(uniqueValidator, { message: '{PATH} debe de ser único' });

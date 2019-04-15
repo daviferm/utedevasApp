@@ -2,7 +2,7 @@
     "name": "metsdb",
     "version": "1.0.0",
     "description": "Base de datos de los parquímetros instalados en UTE-DEVAS",
-    "main": "index.js",
+    "main": "server.js",
     "scripts": {
         "start": "node server/server.js",
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,5 +23,14 @@
         "mongoose-unique-validator": "^2.0.1",
         "socket.io": "^2.1.1",
         "underscore": "^1.9.1"
-    }
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/daviferm/utedevasApp.git"
+    },
+    "bugs": {
+        "url": "https://github.com/daviferm/utedevasApp/issues"
+    },
+    "homepage": "https://github.com/daviferm/utedevasApp#readme"
 }
