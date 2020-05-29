@@ -72,12 +72,14 @@ body {
 
 .mapa .infoPark #btnInfo {
     padding: .2em .8em;
-    height: 35px;
-    margin: 20px 0px;
+    height: 45px;
+    margin: 15px 0px;
     background-color: RGB(51, 117, 71);
-    border-radius: 15px;
-    color: azure;
+    background-color: #17a2b8;
+    border-radius: 5px;
+    color: whitesmoke;
     outline: none;
+    font-size: .9rem;
 }
 
 .mapa .infoPark #btnMap {
@@ -94,7 +96,7 @@ body {
 .mapa .infoPark #btnInfo:before {
     content: "";
     position: absolute;
-    bottom: 8px;
+    bottom: 4px;
     left: 12%;
     width: 80%;
     height: 10px;

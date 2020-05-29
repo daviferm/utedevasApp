@@ -506,8 +506,8 @@
     "empresa" : "Devas 1",
     "estado" : "activo",
     "fabricante" : "Parkeon",
-    "latitud" : "40.46280553",
-    "longitud" : "-3.690122094",
+    "latitud" : "40.462434",
+    "longitud" : "-3.689966",
     "tarifa" : "ZBE"
   }, {
     "alias" : "0106420569",
@@ -1206,8 +1206,8 @@
     "empresa" : "Devas 1",
     "estado" : "activo",
     "fabricante" : "Parkeon",
-    "latitud" : "40.445823",
-    "longitud" : "-3.703571",
+    "latitud" : "40.445460",
+    "longitud" : "-3.703334",
     "tarifa" : "ZBE"
   }, {
     "alias" : "0107530098",
@@ -1416,8 +1416,8 @@
     "empresa" : "Devas 1",
     "estado" : "activo",
     "fabricante" : "Parkeon",
-    "latitud" : "40.44371",
-    "longitud" : "-3.713606",
+    "latitud" : "40.443734",
+    "longitud" : "-3.714095",
     "tarifa" : "Normal"
   }, {
     "alias" : "0108420857",
@@ -2126,8 +2126,8 @@
     "empresa" : "Devas 1",
     "estado" : "activo",
     "fabricante" : "Parkeon",
-    "latitud" : "40.45646",
-    "longitud" : "-3.697194",
+    "latitud" : "40.456554",
+    "longitud" : "-3.697562",
     "tarifa" : "ZBE"
   }, {
     "alias" : "0106230177",
@@ -6345,8 +6345,8 @@
     "empresa" : "Devas 1",
     "estado" : "activo",
     "fabricante" : "Parkeon",
-    "latitud" : "40.453708",
-    "longitud" : "-3.693827",
+    "latitud" : "40.4536449",
+    "longitud" : "-3.6937113",
     "tarifa" : "ZBE"
   }, {
     "alias" : "0106230218",
@@ -6475,8 +6475,8 @@
     "empresa" : "Devas 1",
     "estado" : "activo",
     "fabricante" : "Parkeon",
-    "latitud" : "40.463949",
-    "longitud" : "-3.692977",
+    "latitud" : "40.463717",
+    "longitud" : "-3.693222",
     "tarifa" : "ZBE"
   }, {
     "alias" : "0106420551",
@@ -11544,8 +11544,8 @@
     "empresa" : "Devas 1",
     "estado" : "activo",
     "fabricante" : "WisePark",
-    "latitud" : "40.472517",
-    "longitud" : "-3.709783",
+    "latitud" : "40.472376",
+    "longitud" : "-3.709891",
     "tarifa" : "Normal"
   }, {
     "alias" : "0108420835",
@@ -11994,8 +11994,8 @@
     "empresa" : "Devas 1",
     "estado" : "activo",
     "fabricante" : "Parkeon",
-    "latitud" : "40.449",
-    "longitud" : "-3.711527",
+    "latitud" : "40.447028",
+    "longitud" : " -3.712476",
     "tarifa" : "Normal"
   }, {
     "alias" : "0108520763",
@@ -12104,8 +12104,8 @@
     "empresa" : "Devas 1",
     "estado" : "activo",
     "fabricante" : "Parkeon",
-    "latitud" : "40.455155",
-    "longitud" : "-3.714729",
+    "latitud" : "40.4549790",
+    "longitud" : "-3.7146670",
     "tarifa" : "Normal"
   }, {
     "alias" : "0204410068",
@@ -14223,8 +14223,8 @@
     "empresa" : "Devas 2",
     "estado" : "activo",
     "fabricante" : "Parkare",
-    "latitud" : "40.478142",
-    "longitud" : "-3.684808",
+    "latitud" : "40.478799",
+    "longitud" : "-3.684786",
     "tarifa" : "Normal"
   }, {
     "alias" : "0205611062",
@@ -14713,8 +14713,8 @@
     "empresa" : "Devas 1",
     "estado" : "activo",
     "fabricante" : "Parkeon",
-    "latitud" : "40.457254",
-    "longitud" : "-3.697019",
+    "latitud" : "40.457904",
+    "longitud" : "-3.696863",
     "tarifa" : "ZBE"
   }, {
     "alias" : "0106330265",
@@ -14793,8 +14793,8 @@
     "empresa" : "Devas 1",
     "estado" : "activo",
     "fabricante" : "Parkeon",
-    "latitud" : "40.46268532",
-    "longitud" : "-3.690168991",
+    "latitud" : "40.4628444",
+    "longitud" : "-3.6901054",
     "tarifa" : "ZBE"
   }, {
     "alias" : "0106420568",
@@ -14935,16 +14935,6 @@
     "fabricante" : "WisePark",
     "latitud" : "40.471021",
     "longitud" : "-3.696578",
-    "tarifa" : "Normal"
-  }, {
-    "alias" : "0106420644",
-    "barrio" : "64 ALMENARA.",
-    "direccion" : "C/ San Aquilino, 9 esq Martires de la Ventilla",
-    "empresa" : "Devas 1",
-    "estado" : "activo",
-    "fabricante" : "WisePark",
-    "latitud" : "40.470054",
-    "longitud" : "-3.689635",
     "tarifa" : "Normal"
   }, {
     "alias" : "0106420629",
@@ -15563,8 +15553,8 @@
     "empresa" : "Devas 1",
     "estado" : "activo",
     "fabricante" : "Parkeon",
-    "latitud" : "40.441615",
-    "longitud" : "-3.711361",
+    "latitud" : "40.4416150",
+    "longitud" : "-3.7113610",
     "tarifa" : "Normal"
   }, {
     "alias" : "0107630070",
@@ -18492,8 +18482,8 @@
     "empresa" : "Devas 1",
     "estado" : "activo",
     "fabricante" : "Parkeon",
-    "latitud" : "40.448639",
-    "longitud" : "-3.713052",
+    "latitud" : "40.448501",
+    "longitud" : "-3.712726",
     "tarifa" : "Normal"
   }, {
     "alias" : "0109330963",
@@ -20803,6 +20793,216 @@
     "fabricante" : "Parkare",
     "latitud" : "40.478742",
     "longitud" : "-3.683399",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "1019431132",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Francos Rodriguez, 100",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.457823",
+    "longitud" : "-3.712270",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "1019431133",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "Avda. Santo Angel de la Guarda, 2",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.458345",
+    "longitud" : "-3.712865",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431134",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ General Cadenas Campos s/n",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.459526",
+    "longitud" : "-3.712482",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431135",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Sanchez Preciado, 37",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.460099",
+    "longitud" : "-3.711116",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431136",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Sanchez Preciado, 24",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.459567",
+    "longitud" : "-3.711170",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431137",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Sanchez Preciado 17",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.458933",
+    "longitud" : "-3.711441",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431138",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Ofelia Nieto, 9",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.458492",
+    "longitud" : "-3.710944",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431139",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ San Cesar, 5",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.459166",
+    "longitud" : "-3.711025",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431140",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Sanchez Preciado, s/n",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.459946",
+    "longitud" : "-3.709991",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431141",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Santo Angel de la Guarda, s/n",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.461499",
+    "longitud" : "-3.712276",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431142",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Santo Angel de la Guarda, 6",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.460972",
+    "longitud" : "-3.712231",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431143",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Aguilafuente, 1",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.461731",
+    "longitud" : "-3.710810",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431144",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Sanchez Preciado, 43",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.461403",
+    "longitud" : "-3.710772",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431145",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Sanchez Preciado, 41",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.460872",
+    "longitud" : "-3.711122",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431146",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Aguilafuente, s/n",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.462497",
+    "longitud" : "-3.710282",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431147",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Sanchez Preciado, 63",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.462858",
+    "longitud" : "-3.709799",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431148",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Alesanco, 11",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.462170",
+    "longitud" : "-3.709705",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431149",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Vilaamil, s/n",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.463241",
+    "longitud" : "-3.709049",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431150",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Ofelia Nieto, 71",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.461737",
+    "longitud" : "-3.708983",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431151",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Ofelia Nieto, 51",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.461249",
+    "longitud" : "-3.709144",
+    "tarifa" : "Normal"
+  }, {
+    "alias" : "0109431152",
+    "barrio" : "94 VALDEZARZA",
+    "direccion" : "C/ Sanchez Preciado, 40",
+    "empresa" : "Devas 1",
+    "estado" : "activo",
+    "fabricante" : "Parkeon",
+    "latitud" : "40.461116",
+    "longitud" : "-3.710520",
     "tarifa" : "Normal"
   } ]
 }

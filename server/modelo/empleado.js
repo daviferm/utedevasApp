@@ -1,3 +1,4 @@
+// importar la libreria de mongoose para gestionar la DB
 const mongoose = require('mongoose');
 
 //Libreria para realizar validaciones de la base de datso mongod

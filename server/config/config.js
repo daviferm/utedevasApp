@@ -28,6 +28,7 @@ if (process.env.NODE_ENV === 'dev') {
 
 
 process.env.URLDB = urlDB;
+// console.log(process.env);
 
 //================================
 //  Vencimiento del token (30 dias)

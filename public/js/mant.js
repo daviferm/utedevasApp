@@ -57,10 +57,10 @@ $nick.textContent = nick;
 $email.textContent = email;
 
 $btn_ajustes.addEventListener('click', function() {
-    $ajustes.style.bottom = '0px';
+    $ajustes.style.top = '0px';
 });
 $cerrar.addEventListener('click', function() {
-    $ajustes.style.bottom = '-100%';
+    $ajustes.style.top = '105%';
 })
 
 $formularo.addEventListener('submit', cambiarPassword);

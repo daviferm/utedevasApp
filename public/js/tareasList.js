@@ -29,6 +29,9 @@ const $listaUsuarios = document.getElementById('usuarios');
 
 $barras.addEventListener('click', ocultarMapa);
 
+// $mapa.addEventListener('click', function(e) {
+//     console.log(e.target);
+// })
 
 // $iconoUser.addEventListener('click', function() {
 //     $listaUsuarios.style.left = '0px';
@@ -271,6 +274,7 @@ function mostrarPines(mapa, arreglo) {
                      </div>
                  </div>
          `;
+
 
 
         opacity = undefined ? 1 : opacity;

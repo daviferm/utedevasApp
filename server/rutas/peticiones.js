@@ -23,7 +23,6 @@ app.get('/verification', verificaToken, (req, res) => {
 //Devolvemos un elemento a la página de '/actualizar'
 app.post('/actualiza', verificaToken, (req, res) => {
     let bodyAlias = req.body.alias;
-    console.log(bodyAlias);
 
     Met.findOne({ alias: bodyAlias }, (err, metDB) => {
 

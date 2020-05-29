@@ -39,7 +39,7 @@ async function enviarLogin(e) {
         SPINNER.style.display = "none";
 
     } else {
-        console.log(content);
+        // console.log(content);
         var token = content.token;
         var usuario = JSON.stringify(content.usuario);
 

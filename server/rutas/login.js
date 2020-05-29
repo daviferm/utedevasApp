@@ -13,8 +13,6 @@ const Empleado = require('../modelo/empleado');
 
 const { verificaToken } = require('../middlewares/autenticacion');
 
-let token;
-
 app.get('/', (rep, res) => {
     res.render('home');
 });
@@ -42,7 +40,7 @@ app.get('/tareas', (req, res) => {
 app.post('/login', (req, res) => {
 
     let body = req.body;
-    console.log(body);
+    // console.log(body);
 
     //Este método regresa solo un usuario
     //Puedo especificar una codición en el primer parámetro
