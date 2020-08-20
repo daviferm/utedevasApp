@@ -13,7 +13,7 @@
     "author": "David Fernandez <david_ferm@hotmail.com> (https://twitter.com/david_ferm)",
     "license": "ISC",
     "dependencies": {
-        "bcrypt": "^3.0.0",
+        "bcrypt": "^5.0.0",
         "body-parse": "^0.1.0",
         "colors": "^1.3.2",
         "express": "^4.16.3",
